@@ -1,24 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Header from "./Header";
+import "./App.scss";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <div className="container">
+        <div className="left">
+          <p className="description">
+            Collection of lighting is inspired by the geometric works of the
+            great Suprematist artists Kissitzky and Kazimir Malevich. <br />
+            <br />
+            Suprematism is a modernist movement in the art of the early
+            twentieth century, focused on the basic geometric forms, such as
+            circles, squares, lines and rectangles. The geometric structure of
+            the lamps will always look like a small art objects in your house.
+          </p>
+          <div className="metas"></div>
+        </div>
+        <div
+          className="right"
+          style={{ backgroundImage: "url('/Mask Group.png')" }}
+        ></div>
+      </div>
     </div>
   );
 }

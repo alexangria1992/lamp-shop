@@ -1,0 +1,32 @@
+.header {
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 44px;
+
+  img {
+    width: 110px;
+  }
+  ul {
+    border: 1px solid lightgreen;
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 20px;
+
+    li {
+      a {
+        color: #3d9090;
+        font-size: 1.3125rem;
+        // font-family: SF Compact Display;
+        line-height: 133.836%;
+        font-weight: 400;
+        letter-spacing: 0.07219rem;
+        text-transform: uppercase;
+        text-decoration: none;
+      }
+    }
+  }
+}
