@@ -47,6 +47,7 @@ function Meta(props: { step: number }) {
           <strong>Electrification</strong>: {metas[step].electrification}
         </li>
       </ul>
+      <img src={`Lamp-${step}.png`} alt="" />
     </div>
   );
 }

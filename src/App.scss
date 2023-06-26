@@ -29,6 +29,9 @@
       }
 
       .controls {
+        border: 1px solid blue;
+        display: flex;
+        justify-content: space-between;
       }
     }
     .right {
@@ -38,6 +41,21 @@
       background-size: cover;
       background-position: center;
       border-radius: 9px;
+      position: relative;
+
+      img {
+        position: absolute;
+        top: 0;
+        left: 20%;
+        opacity: 0;
+        transform: translate3d(-50%, 0, 0);
+        transition: all 300ms ease-out;
+
+        &.active {
+          opacity: 1;
+          transform: none;
+        }
+      }
     }
   }
 }

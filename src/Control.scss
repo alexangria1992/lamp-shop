@@ -1,0 +1,26 @@
+.Control {
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 8px;
+    // background: green;
+    margin-left: auto;
+
+    li {
+      border-radius: 7px;
+      height: 65px;
+      width: 65px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        height: 50%;
+      }
+
+      &:hover {
+        background-color: #deedee;
+      }
+    }
+  }
+}

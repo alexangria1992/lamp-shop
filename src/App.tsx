@@ -32,7 +32,23 @@ function App() {
         <div
           className="right"
           style={{ backgroundImage: "url('/Mask Group.png')" }}
-        ></div>
+        >
+          <img
+            src={`Lamp-1.png`}
+            className={step === 1 ? "active" : ""}
+            alt=""
+          />
+          <img
+            src={`Lamp-2.png`}
+            className={step === 2 ? "active" : ""}
+            alt=""
+          />
+          <img
+            src={`Lamp-3.png`}
+            className={step === 3 ? "active" : ""}
+            alt=""
+          />
+        </div>
       </div>
     </div>
   );
