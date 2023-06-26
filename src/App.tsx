@@ -1,7 +1,11 @@
 import Header from "./Header";
 import "./App.scss";
+import Meta from "./Meta";
+import Control from "./Control";
+import { useState } from "react";
 
 function App() {
+  const [step, setStep] = useState(1);
   return (
     <div className="App">
       <Header />
@@ -16,7 +20,14 @@ function App() {
             circles, squares, lines and rectangles. The geometric structure of
             the lamps will always look like a small art objects in your house.
           </p>
-          <div className="metas"></div>
+          <div className="controls">
+            <div className="meta">
+              <Meta step={step} />
+            </div>
+            <div className="control">
+              <Control step={step} setStep={setStep} />
+            </div>
+          </div>
         </div>
         <div
           className="right"
